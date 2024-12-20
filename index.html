@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatterSpace</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body id="body">
+    <header>
+      <h1>ChatterSpace</h1>
+    </header>
+
+    <main>
+      <section id="input">
+        <textarea
+          id="inputPost"
+          placeholder="What's inspiring you today?"
+        ></textarea>
+        <button id="addBtn" onclick="addPost()">Share</button>
+      </section>
+
+      <section id="notification">
+        <p>Your friend, Taylor, just shared an inspiring quote!</p>
+        <button onclick="remove()">Dismiss</button>
+      </section>
+
+      <section id="new">
+        <b><span id="count">1</span></b> post(s)!
+      </section>
+
+      <section class="post">
+        <p>
+          Want to know a cool trick with websites? Try this! Open your browser's
+          console and type <b>document.body.contentEditable = 'true';</b>. Hit
+          Enter, and voilà—you can edit the text on any webpage! But remember,
+          it's just for fun; the changes aren't saved.
+        </p>
+        <div class="post-actions">
+          <button>Like</button>
+          <button>Comment</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
