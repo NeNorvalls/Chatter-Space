@@ -1,0 +1,137 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container styling */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+/* Main section styling */
+main {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Input section styling */
+#input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#input textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  resize: none;
+  min-height: 60px;
+}
+
+#input button {
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#input button:hover {
+  background-color: #0056b3;
+}
+
+/* Post list section styling */
+.post-list {
+  margin-top: 20px;
+}
+
+.post {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post p {
+  font-size: 1em;
+  color: #333;
+}
+
+.post button {
+  padding: 5px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.8em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.post button:hover {
+  background-color: #ddd;
+}
+
+/* Responsive design for media queries */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  #input textarea {
+    font-size: 0.9em;
+    min-height: 50px;
+  }
+
+  #input button {
+    font-size: 0.8em;
+  }
+
+  .post {
+    padding: 10px;
+  }
+
+  .post p {
+    font-size: 0.9em;
+  }
+
+  .post button {
+    padding: 3px;
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 400px) {
+  #input textarea {
+    font-size: 0.8em;
+    min-height: 40px;
+  }
+
+  #input button {
+    font-size: 0.7em;
+    padding: 8px;
+  }
+}

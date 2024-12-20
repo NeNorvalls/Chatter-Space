@@ -7,42 +7,37 @@
     <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
   <body id="body">
-    <header>
-      <h1>ChatterSpace</h1>
-    </header>
+    <div class="container">
+      <header>
+        <h1>ChatterSpace</h1>
+      </header>
 
-    <main>
-      <section id="input">
-        <textarea
-          id="inputPost"
-          placeholder="What's inspiring you today?"
-        ></textarea>
-        <button id="addBtn" onclick="addPost()">Share</button>
-      </section>
+      <main>
+        <!-- Section for users to share their thoughts or post updates -->
+        <section id="input">
+          <!-- Textarea for users to type their post. This is where users write what’s on their mind. -->
+          <textarea
+            id="inputPost"
+            placeholder="What's inspiring you today?"
+          ></textarea>
 
-      <section id="notification">
-        <p>Your friend, Taylor, just shared an inspiring quote!</p>
-        <button onclick="remove()">Dismiss</button>
-      </section>
+          <!-- Button for sharing the post. Clicking this will trigger the function to add the post. -->
+          <button id="addBtn" onclick="addPost()">Share</button>
+        </section>
 
-      <section id="new">
-        <b><span id="count">1</span></b> post(s)!
-      </section>
+        <!-- Section to display the number of posts that have been shared -->
+        <section id="new">
+          <!-- Displays a bold number with the count of posts. -->
+          <b><span id="count">0</span></b> post(s)!
+        </section>
 
-      <section class="post">
-        <p>
-          Want to know a cool trick with websites? Try this! Open your browser's
-          console and type <b>document.body.contentEditable = 'true';</b>. Hit
-          Enter, and voilà—you can edit the text on any webpage! But remember,
-          it's just for fun; the changes aren't saved.
-        </p>
-        <div class="post-actions">
-          <button>Like</button>
-          <button>Comment</button>
-        </div>
-      </section>
-    </main>
+        <!-- Section where posts will be dynamically displayed -->
+        <section class="post-list">
+          <!-- Placeholder for where the posts will appear after being shared -->
+        </section>
+      </main>
 
-    <script src="script.js"></script>
+      <script src="script.js"></script>
+    </div>
   </body>
 </html>
